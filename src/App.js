@@ -72,7 +72,7 @@ function App() {
           title="Dukaan"
           description="Dukaan is your local delivery service for all those delicious Indian Snacks that have a nostalgic touch to them. We hope not only to remind you but also to share those feelings with your friends and families."
           imageUrl={screenshot}
-          link="https://github.com/Arpit1899/Dukaan-Design-"
+          link="https://github.com/Arpit1899/Dukaan-Design-/blob/main/README.md"
           githubLink="https://github.com/Arpit1899/Dukaan-Design-"
           tech="ReactNative . Node.js . GoogleCloud . StripeAPI . DoorDashAPI"
           moreInfo="Engineered and launched a Shopify store for rapid delivery of Indian snacks in Philadelphia. Architected and developed a responsive mobile application using React Native and Node.js, prioritizing usability and performance"
@@ -83,6 +83,8 @@ function App() {
           description="Discover fun, compact voice assistant, harnessing WhisperAPI and ChatGPT API to chat with ChatGPT in 99+ languages - making
           communication a breeze!"
           imageUrl={screenshot2}
+          link="https://github.com/Arpit1899/whisper-help#readme"
+          githubLink="https://github.com/Arpit1899/whisper-help"
           tech="React . Node.js . WhisperAPI . ChatGPT API"
           moreInfo="Conceived and developed a voice-powered assistant, using React, OpenAI's Whisper API and GPT-3.5 model
           • Enabled users to interact with an assistant capable of understanding and responding in 99+ languages, demonstrating the power of advanced Automatic Speech Recognition systems"
@@ -90,7 +92,7 @@ function App() {
         <div className="line"></div>
         <Project
           title="NoteTaking"
-          link="https://github.com/Arpit1899/note-taking-app"
+          link="https://github.com/Arpit1899/note-taking-app#readme"
           githubLink="https://github.com/Arpit1899/note-taking-app"
           description="This is a simple React application for taking notes using OpenAI's GPT-3 model to generate text suggestions"
           imageUrl={screenshot3}
@@ -101,7 +103,7 @@ function App() {
         <Project
           title="CatalogApp"
           githubLink="https://github.com/Arpit1899/CatalogApp"
-          link="https://github.com/Arpit1899/CatalogApp"
+          link="https://github.com/Arpit1899/CatalogApp#readme"
           description="Web application that allows users to create a list of items with
           details. Useful for construction items"
           imageUrl={screenshot4}
