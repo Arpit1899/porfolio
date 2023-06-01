@@ -9,18 +9,19 @@ import Profile from "./profile.png";
 
 import ExperienceComponent from "./ExperienceComponent";
 import Project from "./Project";
-import { motion, useScroll, useSpring } from "framer-motion";
-import ContactMe from "./Contactme";
+import { motion} from "framer-motion";
+
 function App() {
   const email = "arpitparanjpe18@gmail.com";
-  const [showHeader, setShowHeader] = useState(false);
+  const [ showHeader,setShowHeader] = useState(false);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowHeader(true);
     }, 1000);
 
     return () => clearTimeout(timeout);
-  }, []);
+  }, [setShowHeader]);
 
   return (
     <div className="App">
