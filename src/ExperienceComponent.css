@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+  --primary-color: #c5e9fde7;
+  --secondary-color: #999999;
+  --white-color: #ffffff;
+  --transparent-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: #000000;
+}
+
+.experience-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  padding: 24px;
+  border: 1px dashed var(--primary-color);
+  font-family: "Space Mono", monospace;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 5% auto;
+  width: 95%;
+  box-shadow: 0 10px 30px rgba(255,255,255,0.1);
+  position: relative; /* Added */
+}
+
+.experience-component .arrow {
+  /* font-size: 3rem; */
+  cursor: pointer;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  /* margin-left: 20px; */
+  transform: translateY(-50%);
+  color: var(--white-color);
+  z-index: 1; /* Added */
+}
+
+.experience-component .arrow.left {
+  left: 0;
+  margin-right: 20px;
+}
+
+.experience-component .arrow.right {
+  right: 0;
+}
+.selection ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.selection li {
+  cursor: pointer;
+  padding: 8px 12px;
+  background-color: transparent;
+  color: var(--white-color);
+  margin-bottom: 8px;
+  transition: text-decoration 0.2s, color 0.2s, background-color 0.3s;
+  border-radius: 4px;
+  box-sizing: border-box;
+  line-height: 1.5; /* Add more line spacing */
+}
+
+.selection li:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.selection li.selected {
+  text-decoration: none;
+  color: var(--primary-color);
+  background-color: var(--transparent-color);
+}
+
+.details {
+  width: 80%;
+  min-height: 200px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: var(--white-color);
+  padding: 16px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: left;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative; /* Added */
+}
+
+
+
+
+.details strong {
+  display: block;
+  margin-bottom: 1px;
+  font-family: 'Poppins', sans-serif; /* Add a cool font for the titles */
+}
+
+.position {
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.timeline {
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+.company {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+.detail-points ul {
+  padding-left: 20px;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.detail-points li {
+  margin-bottom: 0.5rem;
+}
+
+/* Mobile view media query */
+@media screen and (max-width: 768px) {
+  .experience-component {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .experience-component .arrow {
+    top: 0; /* position arrows at top */
+    transform: translateY(-50%); /* Adjust arrow position */
+  }
+
+  .experience-component .arrow.left {
+    margin-top: 24px; /* Add margin top to left arrow */
+    left: -15px;
+
+  }
+
+  .experience-component .arrow.right {
+    margin-top: 24px; /* Add margin top to left arrow */
+    right: -15px; /* position right arrow at right with 10px space */
+  }
+
+  .selection ul {
+    display: flex;
+    justify-content: space-between; /* Change to space-between for better alignment */
+    flex-wrap: wrap;
+    padding-left: 0; /* Remove the left padding */
+  }
+
+  .selection li {
+    padding: 5px; /* Increase the padding */
+    margin-bottom: 8px;
+    flex-basis: calc(50% - 8px); /* Make sure each element take up equal width, subtract the margin */
+    text-align: center;
+  }
+
+  .details {
+    width: 100%;
+    
+  }
+  .detail-points ul {
+    padding-left: 0;
+    font-size: 0.9rem;
+  }
+}
