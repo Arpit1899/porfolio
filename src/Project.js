@@ -1,7 +1,7 @@
 import React from "react";
 import "./Project.css";
 import { UilGithub } from "@iconscout/react-unicons";
-import { motion, useScroll } from "framer-motion";
+import { motion, } from "framer-motion";
 function Project({ title, description, imageUrl, tech, githubLink, link }) {
   return (
     <div className="project">
