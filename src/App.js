@@ -13,7 +13,7 @@ import { motion} from "framer-motion";
 
 function App() {
   const email = "arpitparanjpe18@gmail.com";
-  const [ showHeader,setShowHeader] = useState(false);
+  const [ ,setShowHeader] = useState(false);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const timeout = setTimeout(() => {
