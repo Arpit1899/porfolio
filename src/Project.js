@@ -16,14 +16,15 @@ function Project({ title, description, imageUrl, tech, githubLink, link, moreInf
       <AnimatePresence initial={false}>
         {isFlipped ? (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            initial={{ opacity: 0, rotateY: 180 }}
+            animate={{ opacity: 1, rotateY: 0 }}
+            exit={{ opacity: 0, rotateY: 180 }}
             transition={{ type: "spring", duration: 1.5, bounce: 0.3 }}
             className="project-text"
           >
             <h2>{title}</h2>
             <p>{moreInfo}</p>
+            <div className="tech">{tech}</div>
             <div className="button-container">
               <a href={githubLink} className="icon-link">
                 <UilGithub size="38" />
@@ -35,9 +36,9 @@ function Project({ title, description, imageUrl, tech, githubLink, link, moreInf
           </motion.div>
         ) : (
           <motion.div
-            initial={{ x: -200, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -200, opacity: 0 }}
+            initial={{ opacity: 0, rotateY: 180 }}
+            animate={{ opacity: 1, rotateY: 0 }}
+            exit={{ opacity: 0, rotateY: 180 }}
             transition={{ type: "spring", duration: 0.5, bounce: 0.3 }}
             className="project-text"
           >
@@ -56,9 +57,9 @@ function Project({ title, description, imageUrl, tech, githubLink, link, moreInf
               <a href={githubLink} className="icon-link">
                 <UilGithub size="38" />
               </a>
-              <a href="#" className="button" onClick={handleReadMoreClick}>
+              <button className="button" onClick={handleReadMoreClick}>
                 Read More
-              </a>
+              </button>
             </motion.div>
           </motion.div>
         )}

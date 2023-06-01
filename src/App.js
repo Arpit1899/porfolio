@@ -75,7 +75,7 @@ function App() {
           link="https://github.com/Arpit1899/Dukaan-Design-"
           githubLink="https://github.com/Arpit1899/Dukaan-Design-"
           tech="ReactNative . Node.js . GoogleCloud . StripeAPI . DoorDashAPI"
-          moreInfo="Dukaan is your local delivery service for all those delicious Indian Snacks that have a nostalgic touch to them. We hope not only to remind you but also to share those feelings with your friends and families."
+          moreInfo="Engineered and launched a Shopify store for rapid delivery of Indian snacks in Philadelphia. Architected and developed a responsive mobile application using React Native and Node.js, prioritizing usability and performance"
         />
         <div className="line"></div>
         <Project
@@ -84,6 +84,8 @@ function App() {
           communication a breeze!"
           imageUrl={screenshot2}
           tech="React . Node.js . WhisperAPI . ChatGPT API"
+          moreInfo="Conceived and developed a voice-powered assistant, using React, OpenAI's Whisper API and GPT-3.5 model
+          • Enabled users to interact with an assistant capable of understanding and responding in 99+ languages, demonstrating the power of advanced Automatic Speech Recognition systems"
         />
         <div className="line"></div>
         <Project
@@ -93,6 +95,7 @@ function App() {
           description="This is a simple React application for taking notes using OpenAI's GPT-3 model to generate text suggestions"
           imageUrl={screenshot3}
           tech="React.js . Node.js . OpenAI API . Express.js"
+          moreInfo="React Note Taking App is a unique application that helps you manage your notes. It's built with React and utilizes OpenAI's GPT-3 model to provide intelligent text suggestions. This application streamlines note creation with AI technology, enhancing your note-taking experience"
         />
         <div className="line"></div>
         <Project
@@ -103,6 +106,7 @@ function App() {
           details. Useful for construction items"
           imageUrl={screenshot4}
           tech="React.js . Node.js . Express.js . MongoDB"
+          moreInfo="The Materials Web App is a dynamic platform designed for managing item lists with detailed specifications. It's a robust application built using React for the frontend, and Node.js with Express for the backend. This web app lets users add, edit, and delete items, while also providing functionalities for server interaction and data submission to an API"
         />
       </div>
       <h2 className="project-title">Where have I worked</h2>
