@@ -75,6 +75,7 @@ function App() {
           link="https://github.com/Arpit1899/Dukaan-Design-"
           githubLink="https://github.com/Arpit1899/Dukaan-Design-"
           tech="ReactNative . Node.js . GoogleCloud . StripeAPI . DoorDashAPI"
+          moreInfo="Dukaan is your local delivery service for all those delicious Indian Snacks that have a nostalgic touch to them. We hope not only to remind you but also to share those feelings with your friends and families."
         />
         <div className="line"></div>
         <Project
@@ -124,13 +125,7 @@ function App() {
           }}
           className="contact-me"
         >
-          <a
-            href="https://github.com/Arpit1899"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <UilGithub size="38" />
-          </a>
+          
           <a
             href="https://www.linkedin.com/in/arpitparanjpe/"
             target="_blank"
@@ -147,7 +142,7 @@ function App() {
             <UilTwitter size="38" />
           </a>
           <p>
-            <a href={`mailto:${email}`}> <UilEnvelopeEdit size="40" /></a>
+            <a href={`mailto:${email}`}> <UilEnvelopeEdit size="38" /></a>
           </p>
         </motion.div>
       </motion.div>

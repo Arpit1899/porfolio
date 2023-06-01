@@ -165,6 +165,7 @@
   }
 
   .button-container {
-    justify-content: center;
+    justify-content: left;
+    
   }
 }
